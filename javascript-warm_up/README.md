@@ -38,4 +38,14 @@ Write a function that returns the addition of 2 integers.
 ## 5. Const or not const
 Write a file that modifies the value of ```myVar``` to ```333```
 
+## 6. Call me Moby
+Write a function that executes ```x``` times a function.
+* The function must be visible from outside
+* Prototype: ```function (x, theFunction)```
+* You are not allowed to use ```var```
 
+## 7. Add me maybe
+Write a function that increments and calls a function.
+* The function must be visible from outside
+* Prototype: ```function (number, theFunction)```
+* You are not allowed to use ```var```
