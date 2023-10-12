@@ -40,3 +40,18 @@ Write a function named ```createClassRoom```:
     * Using a loop from 0 to ```numbersOfStudents```, pass the number of iteration + 1 to ```studentSeat``` and add its return value to the ```students``` array
 * Returns the ```students``` array
 Create a closure ```classRoom```, calling ```createClassRoom``` with 10 students
+
+## 4. Complex Closure
+Create a function ```divideBy```:
+* It takes into argument ```firstNumber``` (```number```)
+* It returns a function that takes into argument ```secondNumber``` (number)
+    * It returns the second number divided by the first number
+Create a function ```addBy```:
+* It takes into argument ```firstNumber``` (number)
+* It returns a function that takes into argument ```secondNumber``` (number)
+    * It returns the sum of the two numbers
+Create four closures:
+* ```addBy100```, that uses the function ```addBy``` with the number 100
+* ```addBy1000```, that uses the function ```addBy``` with the number 1000
+* ```divideBy10```, that uses the function ```divideBy``` with the number 10
+* ```divideBy100```, that uses the function ```divideBy``` with the number 100
