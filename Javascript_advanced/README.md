@@ -8,3 +8,17 @@ Create a function named ```welcome```:
     * It should display an alert with the message ```Welcome``` followed by a space, then the variable ```fullName``` followed by an exclamation mark.
 * Call the function ```displayFullName``` at the end of the function ```welcome```
 
+## 1. Closure Scope Chain
+* Create a variable named globalVariable with value Welcome
+* Create a function outer that:
+    * alerts the content of the variable globalVariable
+    * creates a variable named course with value Holberton
+    * creates a function inner that:
+        * alerts the content of the variable globalVariable and course (concatenated)
+        * creates a variable named exclamation with value !
+        * creates a function inception that alerts the content of the variable globalVariable, course, and exclamation (concatenated)
+        * calls the function inception
+    * calls the function inner
+* Call the function outer
+
+
