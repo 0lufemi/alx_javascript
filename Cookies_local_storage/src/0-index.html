@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Login to the website</h3>
+        <input type="text" id="firstname" placeholder="Firstname">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="setCookies()">Log me in</button>
+    </div>
+    <br><br>
+    <div>
+        <h3>Cookies</h3>
+        <button onclick="showCookies()">Show the cookies</button>
+    </div>
+    <!-- <script>
+        function setCookies(){
+            const firstname = document.getElementById('firstname').value;
+            const email = document.getElementById('email').value;
+            document.cookie = 'firstname=' + firstname;
+            document.cookie = 'lastname=' + email;
+        }
+
+        function showCookies(){
+            const parag = document.createElement('p');
+            let cookies = document.cookie;
+            let text = 'Cookies: '+cookies;
+            parag.innerHTML = text;
+            document.body.appendChild(parag);
+        }
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script>
+        function setCookies(){
+            const firstname = document.getElementById('firstname').value;
+            const email = document.getElementById('email').value;
+            // document.cookie = 'firstname=' + firstname;
+            // document.cookie = 'lastname=' + email;
+            Cookies.set('firstname', firstname);
+            Cookies.set('email', email)
+        }
+
+        function showCookies(){
+            const parag = document.createElement('p');
+            // let cookies = document.cookie;
+            let firstNameCookie = Cookies.get('firstname');
+            let emailCookie = Cookies.get('email');
+            let text = `Cookies: firstname=${firstNameCookie}, email=${emailCookie}`;
+            parag.innerHTML = text;
+            document.body.appendChild(parag);
+        }
+    </script>
+</body>
+</html>
