@@ -153,3 +153,4 @@ Build every feature with vanilla Javascript only
 
 **Tips:**
 * You can look at the GIF below to see how the interaction with the different elements works
+![gif ](f5b5d66a806111a00d3b.gif)
