@@ -44,3 +44,30 @@ Use the HTML code below as the starting point and add your JavaScript code as an
 * Use the DOM API to modify the format of the ```<p class="highlight">``` element to make the content boldened
 * Make use of ```document.querySelectorAll```
 * Verify that the program successfully modifies the element content when the HTML file is opened in a browser.
+
+## 2. Modifying Element Content, Attributes, and Styles
+Write a JavaScript program that demonstrates the use of selectors to select specific HTML elements.
+Use the HTML code below as the starting point and add your JavaScript code as an internal ```<script>``` tag:
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifying Elements</title>
+  <style>
+    img {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <img id="myImage" src="https://picsum.photos/200/300" alt="My Image">
+</body>
+</html>
+```
+* Write JavaScript code to select the ```<img>``` element using its ```id``` and store it in a variable.
+* Use the DOM API to modify the following:
+    * the ```src``` to ```https://picsum.photos/200/301```,
+    * the ```alt``` to ```New image```
+    * the border style to ```2px solid red```
+* Make use of ```document.getElementById```
+* Verify that the program successfully modifies the element content when the HTML file is opened in a browser.
