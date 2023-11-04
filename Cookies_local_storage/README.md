@@ -54,3 +54,10 @@ in a file 3-index.html, reuse your code from the previous task
         * ```(logout)``` should be a link
             * The link font should be display in normal weight, italic, and 10px to the right of the message
             * On click, call the function ```deleteCookiesAndShowForm```, hide the welcome message, and show the form
+
+## 4. Use js-cookie
+Reusing the code from the previous task:
+* Add ```js-cookie``` to your html page using the ```jsdelivr``` CDN
+* Delete the ```getCookie``` function and use ```js-cookie``` get function instead
+* Use ```js-cookie``` remove function within ```deleteCookiesAndShowForm``` function
+* Use ```js-cookie``` set function within ```setCookiesAndShowWelcomeMessage``` function (new function that sets cookies and calls ```showWelcomeMessageOrForm```)
