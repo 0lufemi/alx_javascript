@@ -71,3 +71,23 @@ Use the HTML code below as the starting point and add your JavaScript code as an
     * the border style to ```2px solid red```
 * Make use of ```document.getElementById```
 * Verify that the program successfully modifies the element content when the HTML file is opened in a browser.
+
+## 3. Creating, Appending, and Removing Elements
+Write a JavaScript program that demonstrates the creation, appending, and removal of elements using the DOM.
+Use the HTML code below as the starting point and add your JavaScript code as an internal ```<script>``` tag:
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating and Removing Elements</title>
+</head>
+<body>
+  <div id="container"></div>
+</body>
+</html>
+```
+* Write JavaScript code to select the ```container``` element using its id and store it in a variable.
+* Use the DOM API to create a new ```<p>``` element, and add ```New paragraph``` as its content
+* Append the newly created elements to the container element.
+* Add a button that removes/hides the newly created paragraph when first click and shows it when clicked again
+* Verify that the program successfully creates, appends, and toggles elements when the HTML file is opened in a browser.
