@@ -6,4 +6,3 @@
 3. Javascript advanced
 4. Cookies & local storage
 5. JS HTML DOM manipulation
-6. HTML Forms
